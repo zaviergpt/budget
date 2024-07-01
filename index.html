@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="./style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <ul style="list-style-type: none">
+            <li class="section" id="glance-section">
+                <span>Balance</span>
+                <h1 id="glance-balance"></h1>
+            </li>
+            <li class="section" id="overview-section">
+                <div class="frame">
+                    <div class="info">
+                        <div>
+                            <h1 id="overview-time">This Week</h1>
+                            <h2 id="overview-balance">$50.00 left</h2>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <select id="overview-filter" style="display: none">
+                            <option value="this-week">This Week</option>
+                            <option value="this-year">This Year</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="progress" id="overview-progress"></div>
+                <ul class="legend" id="overview-legend"></ul>
+            </li>
+            <li class="section" id="goals-section">
+                <h1>Goals</h1>
+                <ul id="goals-list"></ul>
+            </li>
+            <li class="section" id="transactions-section">
+                <h1>Transactions</h1>
+                <ul id="transactions-list"></ul>
+            </li>
+        </ul>
+        <ul class="container">
+            <li>
+                <span>Name</span>
+                <input type="text">
+            </li>
+            <li>
+                <span>Category</span>
+                <select></select>
+            </li>
+        </ul>
+    </body>
+    <script type="text/javascript" src="./script.js"></script>
+    <script>
+        /*
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", async () => {
+                navigator.serviceWorker.register("./worker.js")
+            })
+        }
+            */
+    </script>
+</html>

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    user-select: none;
+    font-family: "Geologica", sans-serif;
+    font-optical-sizing: auto;
+}
+body {
+    background-color: #F9F9F9;
+    margin: 20px;
+}
+.section {
+    margin-bottom: 20px;
+}
+#glance-section {
+    margin-bottom: 20px;
+    font-size: calc(15px * 1);
+}
+#glance-section h1 {
+    font-size: calc(15px * 1.75);
+}
+#overview-section {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 2.5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+#overview-section .frame {
+    height: 65px;
+    position: relative;
+}
+#overview-section .frame .info {
+    position: absolute;
+    top: 0;
+    left: calc((65px - 45px)/1.5);
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+#overview-section .frame .info h1 {
+    font-size: calc(15px * 1.25);
+    line-height: calc(15px * 1.25);
+}
+#overview-section .frame .info h2 {
+    font-size: calc(15px * 1.0416);
+    line-height: calc(15px * 1.0416);
+    padding-top: 2.5px;
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 500;
+}
+#overview-section .frame .actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+#overview-section .frame .actions select {
+    appearance: none;
+    box-shadow: 0px 0px 2.5px rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.025);
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+#overview-section .progress {
+    height: 5px;
+    display: flex;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.025);
+}
+#overview-section .progress div {
+    height: 100%;
+    background-color: #222222;
+}
+#overview-section .legend {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 2.5px;
+}
+#overview-section .legend li {
+    display: flex;
+    align-items: center;
+    font-size: 12.5px;
+    padding: 5px;
+}
+#overview-section .legend li div {
+    display: block;
+    width: 12.5px;
+    height: 12.5px;
+    margin-right: 7.5px;
+    border-radius: 50%;
+}
+#transactions-section h1, #goals-section h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#transactions-section #transactions-list {
+    list-style-type: none;
+}
+#transactions-section #transactions-list li {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 1.25px rgba(0, 0, 0, 0.125);
+    margin-bottom: calc(5px + (1.25px * 2));
+    border-radius: 5px;
+    overflow: hidden;
+    height: 60px;
+    position: relative;
+}
+#transactions-section #transactions-list li .info {
+    position: absolute;
+    top: 0;
+    left: 12.5px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    line-height: 13px;
+}
+#transactions-section #transactions-list li .info h1 {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 2.5px;
+}
+#transactions-section #transactions-list li .amount {
+    position: absolute;
+    top: 0;
+    right: 12.5px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+#goals-section #goals-list li {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 2.5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    overflow: hidden;
+}
+#goals-section #goals-list li .info {
+    font-size: 13px;
+    height: 60px;
+    margin-left: calc((60px - 37px)/2)
+}
+#goals-section #goals-list li .info h1 {
+    font-size: 16px;
+    margin: 0;
+}
+#goals-section #goals-list li .percent {
+    position: absolute;
+    top: 0;
+    right: calc((60px - 37px)/2);
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    font-size: 17.5px;
+}
+#goals-section #goals-list li .progress {
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.025);
+    overflow: hidden;
+}
